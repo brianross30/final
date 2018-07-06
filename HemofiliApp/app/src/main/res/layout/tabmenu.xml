@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabmenu"
+    >
+
+    <ImageButton
+        android:id="@+id/BotonConfiguraciones"
+        android:layout_width="128px"
+        android:layout_height="128px"
+        android:adjustViewBounds="true"
+        android:background="#FF530D"
+        android:src="@drawable/settings"
+       />
+
+    <Button
+        android:id="@+id/BotonIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5px"
+        android:background="#FF530D"
+        android:onClick="IngresoInfusion"
+        android:text="Ingreso Infusion" />
+
+    <Button
+        android:id="@+id/BotonLibreta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF530D"
+        android:onClick="LibretaVirtual"
+        android:text="Libreta Virtual"
+        android:layout_marginRight="5px"/>
+
+    <Button
+        android:id="@+id/BotonAyuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FF530D"
+        android:onClick="SlideDeAyuda"
+        android:text="Ayuda"
+        android:layout_marginRight="5px"/>
+
+
+</LinearLayout>

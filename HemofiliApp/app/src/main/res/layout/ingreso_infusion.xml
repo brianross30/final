@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/IngresoInfusion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/IngreseDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:text="Ingrese los datos de la infusión:"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Fecha" />
+
+    <EditText
+        android:id="@+id/Fecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:hint="Fecha"
+        android:inputType="date" />
+
+    <Spinner
+        android:id="@+id/SpinnerMarcas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px" />
+
+    <EditText
+        android:id="@+id/Unidades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:hint="Unidades"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/Profilaxis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250px"
+            android:layout_marginTop="10px"
+            android:checked="false"
+            android:text="Profilaxis" />
+
+        <RadioButton
+            android:id="@+id/Demanda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:checked="false"
+            android:text="Demanda"
+            app:layout_constraintTop_toTopOf="@+id/Unidades" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/SpinnerMotivos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px" />
+
+    <EditText
+        android:id="@+id/Observaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:hint="Observaciones"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/Boton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:text="Siguiente" />
+</LinearLayout>
